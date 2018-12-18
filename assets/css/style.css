@@ -1,0 +1,27 @@
+body {
+    background-image: url("Background.jpg");
+    background-size: 100%;
+    text-align: center; 
+    font-size: 125%;
+    color: black;
+    
+   
+}
+#anything{
+    background-color: aqua;
+    opacity: 0.7;
+}
+.choices{
+    display: inline;
+    display: none;
+}
+#remind,#time{
+    display: inline;
+    display:none;
+}
+#question1,#question2,#question3,#question4,#question5,#question6,#question7{
+    display: none;
+}
+#start{
+    font-size:125%
+}
