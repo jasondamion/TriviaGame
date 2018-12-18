@@ -11,6 +11,7 @@ body {
     background-color: aqua;
     opacity: 0.7;
 }
+/*
 .choices{
     display: inline;
     display: none;
@@ -21,7 +22,11 @@ body {
 }
 #question1,#question2,#question3,#question4,#question5,#question6,#question7{
     display: none;
+} */
+#whole{
+    display: none;
 }
+
 #start{
     font-size:125%
 }
