@@ -1,99 +1,60 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en-us">
 
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simpsons Trivia</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
-<br>
-<br>
 
 <body>
 
-    <button id = "start" onclick= "starting()" >Start Quiz!</button>
-    <div id = "whole" class="container">
-
-        <div class="row">
-
-            <div id="anything" class="column col-md 2">
-
-                <h1 id="title">Black Panther Trivia</h1>
-                <h2 id = "remind">Time remaining: </h2>
-                <h2 id="time">30</h2>
-                <h2 id="question1">What was the army of wakanda named?</h2>
-                <button id="choice1_1" class="choices" display: inline;>1</button>
-                <button id="choice1_2" class="choices" display: inline;>2</button>
-                <button id="choice1_3" class="choices" display: inline;>3</button>
-                <button id="choice1_4" class="choices" display: inline;>4</button>
-                <br>
-
-                <h2 id="question2">T'Challa is the king of Wakanda. What was the previous king, T'Challa's father,
-                    called?</h2>
-                <button id="choice2_1" class="choices" display: inline;>1</button>
-                <button id="choice2_2" class="choices" display: inline;>2</button>
-                <button id="choice2_3" class="choices" display: inline;>3</button>
-                <button id="choice2_4" class="choices" display: inline;>4</button>
-                <br>
-
-                <h2 id="question3">What name does Shuri give to her new, silent type of footwear that she gives to
-                    T'Challa?</h2>
-                <button id="choice3_1" class="choices" display: inline;>1</button>
-                <button id="choice3_2" class="choices" display: inline;>2</button>
-                <button id="choice3_3" class="choices" display: inline;>3</button>
-                <button id="choice3_4" class="choices" display: inline;>4</button>
-                <br>
-
-                
-
-                <h2 id="question4">What is the name of the special vibranium-enhanced plant that gives the Black
-                    Panther
-                    his powers?</h2>
-                <button id="choice4_1" class="choices" display: inline;>1</button>
-                <button id="choice4_2" class="choices" display: inline;>2</button>
-                <button id="choice4_3" class="choices" display: inline;>3</button>
-                <button id="choice4_4" class="choices" display: inline;>4</button>
-                <br>
-
-                <h2 id="question5">What is Shuri's relationship with T'Challa?</h2>
-                <button id="choice5_1" class="choices" display: inline;>1</button>
-                <button id="choice5_2" class="choices" display: inline;>2</button>
-                <button id="choice5_3" class="choices" display: inline;>3</button>
-                <button id="choice5_4" class="choices" display: inline;>4</button>
-                <br>
-
-                <h2 id="question6">What is the name of the special type of beads worn by Wakandans, that can do
-                    everything from make calls to healing people?</h2>
-                <button id="choice6_1" class="choices" display: inline;>1</button>
-                <button id="choice6_2" class="choices" display: inline;>2</button>
-                <button id="choice6_3" class="choices" display: inline;>3</button>
-                <button id="choice6_4" class="choices" display: inline;>4</button>
-                <br>
-
-                <h2 id="question7">In the final big battle during Black Panther, what weapon does Shuri use?</h2>
-                <button id="choice7_1" class="choices" display: inline;>1</button>
-                <button id="choice7_2" class="choices" display: inline;>2</button>
-                <button id="choice7_3" class="choices" display: inline;>3</button>
-                <button id="choice7_4" class="choices" display: inline;>4</button>
-                <br>
-                <br>
-
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="display-3">Are you from Wakanda? PROVE IT</h1>
+        <hr>
+      </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-3">
+        <div>
+          <h3 id="timer"></h3>
+        </div>
+      </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/javascript/app.js"></script>
+      <div class="offset-md-1"></div>
+
+      <div class="col-md-8">
+        <div id="start-page" class="start-page-text">
+          <h2>Play to earn your right as a Wakandan</h2>
+          <p>You need to answer every question truthfully and correctly to pass the written test</p>
+          <div class="btn btn-primary" id="start-button">Start
+          </div>
+        </div>
+
+      <div>
+        <div id="questions-box">
+        </div>
+      </div>
+
+        <div class="hidden" id="end-page">
+          <h2>Wakandan Citizen Results:</h2>
+          <p id="correct-answers"></p>
+          <p id="incorrect-answers"></p>
+          <p id="unanswered"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
-
 </html>
